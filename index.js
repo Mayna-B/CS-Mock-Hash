@@ -1,5 +1,8 @@
 // This allows us to use the bcrypt algorithm in our Node.js project
 const bcrypt = require('bcrypt')
+const saltRounds = 10;
+const myPlaintextPassword = 's0/\/\P4$$w0rD';
+const someOtherPlaintextPassword = 'not_bacon';
 
 // This allows us to read from the terminal
 const readlineSync = require('readline-sync')
